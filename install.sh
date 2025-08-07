@@ -10,11 +10,7 @@ echo "Working as: $CURRENT_USER"
 # Run an update on the system before making other changes
 echo "Updating system..."
 sudo apt update 
-# Ask the user if they want to run apt upgrade
-read -p "Do you want to run 'sudo apt upgrade' now? (y/n): " upgrade_choice
-if [[ "$upgrade_choice" =~ ^[Yy]$ ]]; then
-  echo "Running 'sudo apt upgrade'..."
-  sudo apt upgrade -y
+
 # Install necessary dependencies for GStreamer and RTSP server
 echo "Installing dependencies..."
 sudo apt install -y \
@@ -26,6 +22,7 @@ sudo apt install -y \
   gstreamer1.0-plugins-bad \
   gstreamer1.0-plugins-ugly \
   gstreamer1.0-libav \
+  gstreamer1.0-alsa \
   libgstrtspserver-1.0-dev \
   gir1.2-gst-rtsp-server-1.0
 # Scan for audio capture devices
