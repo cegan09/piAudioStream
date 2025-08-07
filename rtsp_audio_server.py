@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# RTSP audio server using GStreamer
+# This script sets up an RTSP server that streams audio from a specified ALSA device.
 
 import gi
 gi.require_version('Gst', '1.0')
