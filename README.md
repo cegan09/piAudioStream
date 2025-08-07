@@ -5,7 +5,10 @@ I wrote this script so that I wouldn't have to relearn how to set this up every 
 At home I run [birdNET-pi](https://github.com/Nachtzuster/BirdNET-Pi), however rather than install multiple pi4s to each run their own server, I use pi zero 2s to stream audio over rtsp and then a single birdnet pi4 to injest those streams and process them. These could be used for other versions of the birdNET project as well.
 This script should take a newly flashed Pi Zero 2 and get it configured and streaming audio. 
 
-This script assumes you're using Pi OS Lite (64-bit) - bookworm. It may work on others but I have not tested.
+### Tested Hardware
+The following devices and OS combinations have been tested
+ - Pi Zero 2W + Pi OS Lite 64bit - bookworm: Confirmed working
+ - Pi Zero W V1.1 + Pi OS Lite 32bit - bookworm: Script installs and service runs, however a single stream will max out the CPU. This combination may work, but may not be perfect
 
 ### How To Use
 1. Review the files and scripts before downloading and running, you should understand what you're running before blindly trusting internet strangers
