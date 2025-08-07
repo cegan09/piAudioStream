@@ -26,7 +26,7 @@ sudo apt install -y \
   libgstrtspserver-1.0-dev \
   gir1.2-gst-rtsp-server-1.0
 # Scan for audio capture devices
-echo "🔍 Scanning for audio capture devices..."
+echo "Scanning for audio capture devices..."
 mapfile -t devices < <(
   arecord -l | grep '^card' | while read -r line; do
     card_id=$(echo "$line" | sed -n 's/^card \([0-9]*\):.*/\1/p')
