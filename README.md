@@ -2,7 +2,7 @@
 Automatic install script to get a pi zero 2w streaming audio on rtsp
 
 I wrote this script so that I wouldn't have to relearn how to set this up every time I wanted to configure another device. 
-At home I run [birdNET-pi](https://github.com/Nachtzuster/BirdNET-Pi), however rather than install multiple pi4s to each run their own server, I use pi zero 2s to stream audio over rtsp and then a single birdnet pi4 to injest those streams and process them. These could be used for other versions of the birdNET project as well.
+At home I run [birdNET-pi](https://github.com/Nachtzuster/BirdNET-Pi) and [birdNET-go](https://github.com/tphakala/birdnet-go), however rather than install multiple pi4s to each run their own server, I use pi zero 2s to stream audio over rtsp and then a single birdnet device to injest those streams and process them. 
 This script should take a newly flashed Pi Zero 2 and get it configured and streaming audio. 
 
 ### Tested Hardware
